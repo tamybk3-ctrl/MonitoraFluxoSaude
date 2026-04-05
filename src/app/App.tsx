@@ -1,3 +1,12 @@
+import { RouterProvider } from "react-router";
+import { router } from "./routes";
+import { Toaster } from "./components/ui/sonner";
+
 export default function App() {
-  return <h1>Teste MonitoraFluxo</h1>;
+  return (
+    <>
+      <RouterProvider router={router} />
+      <Toaster />
+    </>
+  );
 }
